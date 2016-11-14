@@ -27,3 +27,7 @@ def another_one():
         print ("I have mastered the art of decoration!")
 
 print another_one()
+# NOTE
+# the use of @decorator_name is just a short way of saying:
+another_one = a_decorator(another_one)
+another_one()
