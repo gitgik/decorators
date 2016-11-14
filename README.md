@@ -1,3 +1,7 @@
+# Decorators
+A simple guide to understanding how decorators in python work!
+This is for those who shall not decorate!
+
 #### Decorators demystified
 Most python programmers fear decorators. They are simply functions that wrap other
 functions and modify their behavior in the process.
@@ -44,5 +48,12 @@ def func(passed_in_func):
     # Return a function without calling it
     return wrapped_function
 
+# Time for some experimentation
+a = func()
+print a # prints <function wrapped_function at (memory_location)>
+print a() # prints "Before the final blow was struck, I flung him into..."
 ```
-If you don't put parenthesis e.g wrapped_function(), a function can be passed around and can be assigned to other variables without executing it.
+This means that:
+`If you don't put parenthesis e.g wrapped_function(), a function can be passed around and can be assigned to other variables without executing it.`
+
+This is the underlying structure used by decorators.
