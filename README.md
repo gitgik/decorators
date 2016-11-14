@@ -20,8 +20,13 @@ No pip installs! Simple and easy. :-)
 You do not have to clone the repo. Just paste the code from decorators.py into a repl
 and click run. Magic happen at [repl](repl.it)
 
-#### Local
-Run ``` python decorators.py ```
+#### Local usage
+Run:
+``` python decorators.py ```
+
+You can play around with the decorator-driven stopwatch by running:
+```python stopwatch.py```
+Feel free to include your own function to test how long it will take to execute.
 
 #### Explanation
 In python, functions can be passed into other functions.
@@ -57,3 +62,4 @@ This means that:
 `If you don't put parenthesis e.g wrapped_function(), a function can be passed around and can be assigned to other variables without executing it.`
 
 This is the underlying structure used by decorators.
+
