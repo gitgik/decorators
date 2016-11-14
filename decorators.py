@@ -17,3 +17,13 @@ def a_decorator(passed_in_function):
     # Notice we return a function without calling it
     # i.e do_something != do_something()
     return do_something
+
+
+@a_decorator
+def another_one():
+    """A function that is wrapped by a decorator."""
+    # Do some work here
+    for x in xrange(1, 5):
+        print ("I have mastered the art of decoration!")
+
+print another_one()
